@@ -1,0 +1,6 @@
+framework module KodexCoreLibrary {
+  umbrella header "KodexCoreLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

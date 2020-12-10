@@ -1,0 +1,22 @@
+{
+  "name": "KodexCoreLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of KodexCoreLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jawadkodextech/KodexCoreLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jawadkodextech": "jawadali1008@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jawadkodextech/KodexCoreLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KodexCoreLibrary/Classes/**/*"
+}

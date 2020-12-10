@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'KodexCoreLibrary_Example' do
+  pod 'KodexCoreLibrary', :path => '../'
+
+  target 'KodexCoreLibrary_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'FBSnapshotTestCase'
+    pod 'Nimble-Snapshots'
+  end
+end
