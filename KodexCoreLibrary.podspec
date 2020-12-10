@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KodexCoreLibrary'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'Basic Kodex Core Library'
 
 # This description is used to generate tags and improve search results.
