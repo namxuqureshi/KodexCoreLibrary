@@ -28,6 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/jawadkodextech/KodexCoreLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '12.0'
+  s.static_framework = true
   s.source_files = 'KodexCoreLibrary/Classes/'
   # s.resource_bundles = {
   #   'KodexCoreLibrary' => ['KodexCoreLibrary/Assets/*.png']
@@ -50,7 +51,7 @@ TODO: Add long description of the pod here.
    s.dependency 'FacebookCore'
    s.dependency 'FacebookLogin'
    s.dependency 'FacebookShare'
-   s.dependency 'GoogleSignIn'
+#   s.dependency 'GoogleSignIn'
    s.dependency 'DropDown'
    s.dependency 'SkeletonView'
    s.dependency 'PinCodeTextField'
