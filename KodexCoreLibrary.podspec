@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
    #    'KodexCoreLibrary' => ['KodexCoreLibrary/**/*.png','KodexCoreLibrary/**/*.pdf','KodexCoreLibrary/Classes/**/*.xib']
   # }
 
- s.resources = "KodexCoreLibrary/Assets/**/*.xcassets", 'KodexCoreLibrary/Views/**/*.xib', "KodexCoreLibrary/Fonts/*.ttf"
+ s.resources = "KodexCoreLibrary/Assets/**/*.pdf", 'KodexCoreLibrary/Views/**/*.xib', "KodexCoreLibrary/Fonts/*.otf"
    
    s.public_header_files = 'KodexCoreLibrary/Classes/*.h'
    s.frameworks = 'UIKit', 'MapKit'
