@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '12.0'
   s.static_framework = true
-  s.source_files = 'KodexCoreLibrary/Classes/'
+  s.source_files = 'KodexCoreLibrary/Classes/**/*'
   # s.resource_bundles = {
   #   'KodexCoreLibrary' => ['KodexCoreLibrary/Assets/*.png']
   # }
