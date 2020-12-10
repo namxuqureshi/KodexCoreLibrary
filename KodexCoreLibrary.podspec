@@ -30,9 +30,10 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '12.0'
   s.static_framework = true
   s.source_files = 'KodexCoreLibrary/Classes/**/*'
-  # s.resource_bundles = {
-  #   'KodexCoreLibrary' => ['KodexCoreLibrary/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'KodexCoreLibrary' => ['KodexCoreLibrary/Assets/*.png']
+   }
+   s.resources    = ['KodexCoreLibrary/*', 'KodexCoreLibrary/Classes/**/*.xib']
    s.public_header_files = 'KodexCoreLibrary/Classes/*.h'
    s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'IQKeyboardManager'
