@@ -16,7 +16,6 @@ import MaterialComponents.MaterialBottomSheet
 import ESTabBarController_swift
 import MobileCoreServices
 import ContactsUI
-import LocationPickerViewController
 
 extension UIViewController :SFSafariViewControllerDelegate{
     
@@ -187,20 +186,6 @@ extension UIViewController :SFSafariViewControllerDelegate{
 //        contactPicker.displayedPropertyKeys
         self.presentVC(contactPicker)
     }
-    
-    func openLocationPicker(completation:@escaping ((LocationItem) -> Void)){
-        let locationPicker = LocationPicker()
-        locationPicker.pickCompletion = { (pickedLocationItem) in
-            // Do something with the location the user picked.
-            completation(pickedLocationItem)
-        }
-        locationPicker.addBarButtons()
-        // Call this method to add a done and a cancel button to navigation bar.
-
-        let navigationController = UINavigationController(rootViewController: locationPicker)
-        self.presentVC(navigationController)
-    }
-    
     func openAudioRecorder(delegate:AudioRecorderViewControllerDelegate){
         let controller = AudioRecorderViewController()
         controller.audioRecorderDelegate = delegate

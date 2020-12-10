@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KodexCoreLibrary'
-  s.version          = '1.1.4'
+  s.version          = '1.1.5'
   s.summary          = 'Basic Kodex Core Library'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
    #    'KodexCoreLibrary' => ['KodexCoreLibrary/**/*.png','KodexCoreLibrary/**/*.pdf','KodexCoreLibrary/Classes/**/*.xib']
   # }
 
- s.resources = "KodexCoreLibrary/Images/**/*.png", "KodexCoreLibrary/Images/**/*.jpg", 'KodexCoreLibrary/Views/**/*.xib', "KodexCoreLibrary/Fonts/*.otf"
+ s.resources = "KodexCoreLibrary/Assets/**/*.xcassets", 'KodexCoreLibrary/Views/**/*.xib', "KodexCoreLibrary/Fonts/*.ttf"
    
    s.public_header_files = 'KodexCoreLibrary/Classes/*.h'
    s.frameworks = 'UIKit', 'MapKit'
