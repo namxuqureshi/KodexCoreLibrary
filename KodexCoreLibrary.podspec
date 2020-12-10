@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KodexCoreLibrary'
-  s.version          = '1.1.0'
+  s.version          = '1.1.4'
   s.summary          = 'Basic Kodex Core Library'
 
 # This description is used to generate tags and improve search results.
@@ -29,10 +29,11 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '12.0'
   s.static_framework = true
-  s.source_files = 'KodexCoreLibrary/Classes/'
-  # s.resource_bundles = {
-  #   'KodexCoreLibrary' => ['KodexCoreLibrary/Assets/*.png']
-  # }
+  s.source_files = 'KodexCoreLibrary/Classes/**/*.swift'
+   s.resource_bundles = {
+     'KodexCoreLibrary' => ['KodexCoreLibrary/**/*.png','KodexCoreLibrary/**/*.pdf','KodexCoreLibrary/Classes/**/*.xib']
+   }
+   # s.resources    = ['KodexCoreLibrary/*', 'KodexCoreLibrary/Classes/**/*.xib']
    s.public_header_files = 'KodexCoreLibrary/Classes/*.h'
    s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'IQKeyboardManager'
