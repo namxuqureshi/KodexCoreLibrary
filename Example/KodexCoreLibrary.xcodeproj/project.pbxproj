@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EDA5A42E80E267C400E298A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0EDA5A42E80E267C400E298A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		144E5F9C0A6A06DDF3743526 /* Pods-KodexCoreLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KodexCoreLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-KodexCoreLibrary_Example/Pods-KodexCoreLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		46D374DA4257BD642B9DBEDE /* Pods_KodexCoreLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KodexCoreLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7A778F9D945463FBF4BB97 /* Pods-KodexCoreLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KodexCoreLibrary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KodexCoreLibrary_Tests/Pods-KodexCoreLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,9 +44,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		800A7D1D13DC403BB9A70B4C /* Pods-KodexCoreLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KodexCoreLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-KodexCoreLibrary_Example/Pods-KodexCoreLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		89E45D429330C3F320587E93 /* Pods_KodexCoreLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KodexCoreLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F9CD2903F42C78D6C72B35B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8F9CD2903F42C78D6C72B35B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C8D4B8364BDA7276D1721BCF /* Pods-KodexCoreLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KodexCoreLibrary_Tests.release.xcconfig"; path = "Target Support Files/Pods-KodexCoreLibrary_Tests/Pods-KodexCoreLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D13A28B2910D2A6F7D636A48 /* KodexCoreLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KodexCoreLibrary.podspec; path = ../KodexCoreLibrary.podspec; sourceTree = "<group>"; };
+		D13A28B2910D2A6F7D636A48 /* KodexCoreLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KodexCoreLibrary.podspec; path = ../KodexCoreLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				4A7A778F9D945463FBF4BB97 /* Pods-KodexCoreLibrary_Tests.debug.xcconfig */,
 				C8D4B8364BDA7276D1721BCF /* Pods-KodexCoreLibrary_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
