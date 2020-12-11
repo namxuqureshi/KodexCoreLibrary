@@ -64,7 +64,7 @@ open class CustomDescriptionTV: UIView {
     
     open var setFont : UIFont?{
         didSet{
-            self.textField.font = setFont
+            self.textView.font = setFont
         }
     }
     

@@ -50,9 +50,9 @@ open class CustomPasswordTF: UIView {
     }
     
     @IBInspectable
-    open var setTickImage: UIImage? {
+    open var setDisplayImage: UIImage? {
         didSet{
-            self.tickImage.image = setTickImage
+            self.imageVissible.image = setDisplayImage
         }
     }
     
