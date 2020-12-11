@@ -49,6 +49,49 @@ open class CustomPasswordTF: UIView {
         }
     }
     
+    @IBInspectable
+    open var setTickImage: UIImage? {
+        didSet{
+            self.tickImage.image = setTickImage
+        }
+    }
+    
+    fileprivate var _fontSize:CGFloat = 18
+    @IBInspectable
+    var font:CGFloat
+    {
+        set
+        {
+            _fontSize = newValue
+            self.textField.font = UIFont(name: _fontName, size: _fontSize)
+        }
+        get
+        {
+            return _fontSize
+        }
+    }
+    
+    fileprivate var _fontName:String = "Helvetica"
+    @IBInspectable
+    var fontName:String
+    {
+        set
+        {
+            _fontName = newValue
+            self.textField.font = UIFont(name: _fontName, size: _fontSize)
+        }
+        get
+        {
+            return _fontName
+        }
+    }
+    
+    open var setFont : UIFont?{
+        didSet{
+            self.textField.font = setFont
+        }
+    }
+    
     open func setText(text : String){
         self.textField.text = text
     }
