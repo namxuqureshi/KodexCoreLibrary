@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GoogleSignIn
 import FacebookLogin
 import SwiftyJSON
 import AuthenticationServices

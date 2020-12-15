@@ -42,6 +42,9 @@ open class CustomDatePickerTF: UIView , DatePickerTextFieldDelegate  {
     }
     
     open var text: String{
+        set{
+            self.textField.text = newValue
+        }
         get{
             return self.textField.text!
         }
@@ -78,51 +81,9 @@ open class CustomDatePickerTF: UIView , DatePickerTextFieldDelegate  {
         self.view = view
     }
     
-    @IBInspectable
-    open var setTickImage: UIImage? {
-        didSet{
-            self.tickImage.image = setTickImage
-        }
-    }
-    
-    fileprivate var _fontSize:CGFloat = 18
-    @IBInspectable
-    var font:CGFloat
-    {
-        set
-        {
-            _fontSize = newValue
-            self.textField.font = UIFont(name: _fontName, size: _fontSize)
-        }
-        get
-        {
-            return _fontSize
-        }
-    }
-    
-    fileprivate var _fontName:String = "Helvetica"
-    @IBInspectable
-    var fontName:String
-    {
-        set
-        {
-            _fontName = newValue
-            self.textField.font = UIFont(name: _fontName, size: _fontSize)
-        }
-        get
-        {
-            return _fontName
-        }
-    }
-    
-    open var setFont : UIFont?{
-        didSet{
-            self.textField.font = setFont
-        }
-    }
-    
     private func setupView(){
         self.textField.update_delegate = self
+        self.textField.font = ProjectFont.PopinsRegular(16.0).font()
         self.textField.delegate = self
         self.textField.placeHolderColor = ProjectColor.placeholderColor
         self.textField.placeholder = "Email"

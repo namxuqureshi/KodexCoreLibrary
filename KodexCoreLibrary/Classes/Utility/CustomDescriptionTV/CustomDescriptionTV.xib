@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDescriptionTV" customModule="KodexCoreNetwork" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="trd-ny-MFA" id="saB-ky-byN"/>
+                <outlet property="lblTitle" destination="g7h-lF-uXb" id="TJf-1X-LTr"/>
+                <outlet property="textView" destination="7af-XQ-sfg" id="WCS-UG-C2V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jqM-mA-e60">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72B-cd-aWB">
+                    <rect key="frame" x="0.0" y="0.0" width="331" height="146"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7h-lF-uXb" customClass="NormalLabel" customModule="KodexCoreNetwork" customModuleProvider="target">
+                            <rect key="frame" x="16" y="2" width="315" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trd-ny-MFA">
+                            <rect key="frame" x="2" y="22" width="327" height="122"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7af-XQ-sfg">
+                                    <rect key="frame" x="5" y="5" width="317" height="112"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="7af-XQ-sfg" firstAttribute="top" secondItem="trd-ny-MFA" secondAttribute="top" constant="5" id="TJB-Rh-ySS"/>
+                                <constraint firstItem="7af-XQ-sfg" firstAttribute="leading" secondItem="trd-ny-MFA" secondAttribute="leading" constant="5" id="Y8P-Z8-ef2"/>
+                                <constraint firstAttribute="trailing" secondItem="7af-XQ-sfg" secondAttribute="trailing" constant="5" id="jAG-Da-75A"/>
+                                <constraint firstAttribute="bottom" secondItem="7af-XQ-sfg" secondAttribute="bottom" constant="5" id="llk-DL-KZz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="trd-ny-MFA" firstAttribute="top" secondItem="g7h-lF-uXb" secondAttribute="bottom" constant="3" id="3jV-El-sdI"/>
+                        <constraint firstAttribute="trailing" secondItem="g7h-lF-uXb" secondAttribute="trailing" id="EYi-M5-xG8"/>
+                        <constraint firstItem="g7h-lF-uXb" firstAttribute="leading" secondItem="72B-cd-aWB" secondAttribute="leading" constant="16" id="Ezj-A5-kLm"/>
+                        <constraint firstAttribute="bottom" secondItem="trd-ny-MFA" secondAttribute="bottom" constant="2" id="Fd2-0u-c7X"/>
+                        <constraint firstAttribute="trailing" secondItem="trd-ny-MFA" secondAttribute="trailing" constant="2" id="KEQ-vg-pi1"/>
+                        <constraint firstAttribute="height" constant="146" id="QEB-bu-F4S"/>
+                        <constraint firstItem="trd-ny-MFA" firstAttribute="top" secondItem="72B-cd-aWB" secondAttribute="top" constant="22" id="ZDb-AL-TNC"/>
+                        <constraint firstItem="trd-ny-MFA" firstAttribute="leading" secondItem="72B-cd-aWB" secondAttribute="leading" constant="2" id="khF-J0-aR1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Yd0-Pl-Wdd"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="72B-cd-aWB" firstAttribute="leading" secondItem="jqM-mA-e60" secondAttribute="leading" id="2fl-uv-sC2"/>
+                <constraint firstItem="72B-cd-aWB" firstAttribute="bottom" secondItem="jqM-mA-e60" secondAttribute="bottom" id="5qx-hJ-ECU"/>
+                <constraint firstAttribute="top" secondItem="72B-cd-aWB" secondAttribute="top" id="SbD-aZ-bcv"/>
+                <constraint firstAttribute="trailing" secondItem="72B-cd-aWB" secondAttribute="trailing" id="vge-aj-khv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="18.115942028985508" y="-123.21428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

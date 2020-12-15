@@ -26,45 +26,11 @@ open class CustomDescriptionTV: UIView {
     }
     
     open var text: String{
+        set{
+            self.textView.text = newValue
+        }
         get{
             return self.textView.text!
-        }
-    }
-    
-    
-    fileprivate var _fontSize:CGFloat = 18
-    @IBInspectable
-    var font:CGFloat
-    {
-        set
-        {
-            _fontSize = newValue
-            self.textView.font = UIFont(name: _fontName, size: _fontSize)
-        }
-        get
-        {
-            return _fontSize
-        }
-    }
-    
-    fileprivate var _fontName:String = "Helvetica"
-    @IBInspectable
-    var fontName:String
-    {
-        set
-        {
-            _fontName = newValue
-            self.textView.font = UIFont(name: _fontName, size: _fontSize)
-        }
-        get
-        {
-            return _fontName
-        }
-    }
-    
-    open var setFont : UIFont?{
-        didSet{
-            self.textView.font = setFont
         }
     }
     
@@ -91,6 +57,7 @@ open class CustomDescriptionTV: UIView {
     }
     
     private func setupView(){
+        self.textView.font = ProjectFont.PopinsRegular(16.0).font()
     }
     
     public func setError(){

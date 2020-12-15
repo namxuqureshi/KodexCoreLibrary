@@ -15,6 +15,7 @@ public protocol HeaderViewDelegate{
 open class HeaderView: UIView {
     @IBOutlet weak var notificationView: UIView!
     @IBOutlet weak var profileVView: UIView!
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var btnMenu: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
     open var delegate : HeaderViewDelegate?
@@ -57,8 +58,11 @@ open class HeaderView: UIView {
         self.view = view
     }
     
-    private func setupView(){
+    public func setupView(){
         self.view.bounceAnimationView()
+        if let img  =  DataManager.sharedInstance.profileImage{
+            self.imgView.loadGif(url: URL.init(string: img), placeholder: PlaceHolder.ImageDefault)
+        }
     }
     
     @IBAction func onClickMenu(_ sender : UIButton){

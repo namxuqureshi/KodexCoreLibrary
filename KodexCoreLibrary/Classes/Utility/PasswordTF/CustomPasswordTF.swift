@@ -40,55 +40,15 @@ open class CustomPasswordTF: UIView {
         get{
             return self.textField.text!
         }
+        set{
+            self.textField.text! = newValue
+        }
     }
     
     @IBInspectable
     var setUnSelectedImage: UIImage? {
         didSet{
             self.unSelectedImage = setUnSelectedImage
-        }
-    }
-    
-    @IBInspectable
-    open var setDisplayImage: UIImage? {
-        didSet{
-            self.imageVissible.image = setDisplayImage
-        }
-    }
-    
-    fileprivate var _fontSize:CGFloat = 18
-    @IBInspectable
-    var font:CGFloat
-    {
-        set
-        {
-            _fontSize = newValue
-            self.textField.font = UIFont(name: _fontName, size: _fontSize)
-        }
-        get
-        {
-            return _fontSize
-        }
-    }
-    
-    fileprivate var _fontName:String = "Helvetica"
-    @IBInspectable
-    var fontName:String
-    {
-        set
-        {
-            _fontName = newValue
-            self.textField.font = UIFont(name: _fontName, size: _fontSize)
-        }
-        get
-        {
-            return _fontName
-        }
-    }
-    
-    open var setFont : UIFont?{
-        didSet{
-            self.textField.font = setFont
         }
     }
     

@@ -6,11 +6,14 @@
 //
 
 import UIKit
-
+public protocol CheckBoxDelegate {
+    func updateCheckBoxValue(value : Bool)
+}
 open class CheckBox: UIView {
-    var isChecked : Bool = false
+    public var isChecked : Bool = false
     @IBOutlet weak var lbl: UILabel!
     @IBOutlet weak var box: UIView!
+    public var delegate : CheckBoxDelegate?
     @IBOutlet weak var tickImage: UIImageView!
     var selectedColor : UIColor?
     @IBInspectable
@@ -72,6 +75,11 @@ open class CheckBox: UIView {
      
     }
     
+    public func setValue(value : Bool){
+        self.isChecked = !value
+        onClickCheckBox(UIButton())
+    }
+    
     
     @IBAction func onClickCheckBox(_ sender: Any) {
         if isChecked{
@@ -85,6 +93,7 @@ open class CheckBox: UIView {
             self.box.borderWidth = 0
             self.box.backgroundColor = ProjectColor.buttonColor
         }
+        delegate?.updateCheckBoxValue(value: isChecked)
     }
     
 }

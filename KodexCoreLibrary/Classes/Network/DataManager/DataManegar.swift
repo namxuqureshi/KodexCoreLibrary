@@ -28,12 +28,42 @@ open class DataManager: NSObject {
             }
         }
     }
+    
+    open var profileImage:String? {
+        set(value) {
+            if(value != nil){
+                UserDefaults.standard.set(value, forKey: "ProfileImage")
+            }
+        }
+        get {
+            let stToken = UserDefaults.standard.string(forKey: "ProfileImage")
+            if(stToken == nil){
+                return nil
+            }else if (stToken?.isEmpty ?? false) {
+                return nil
+            }else{
+                return stToken
+            }
+        }
+    }
     open func saveUserPermanentally<T: Codable>(_ item:T?) {
         UserDefaults.standard.setCodableObject(item, forKey: kUserPrefKey)
     }
     
-    open func getPermanentlySavedUser<T: Codable>() -> T? {
-        if let data = UserDefaults.standard.codableObject(dataType: T.self, key: kUserPrefKey) {
+    open func saveObjectPermanentally<T: Codable>(_ item:T? , key : String) {
+        UserDefaults.standard.setCodableObject(item, forKey: key)
+    }
+    
+    open func getPermanentlySavedUser<T: Codable>(dataType: T.Type) -> T? {
+        if let data = UserDefaults.standard.codableObject(dataType: dataType, key: kUserPrefKey) {
+            return data
+        } else {
+            return nil
+        }
+    }
+    
+    open func getPermanentlySavedObject<T: Codable>(dataType: T.Type , key : String) -> T? {
+        if let data = UserDefaults.standard.codableObject(dataType: dataType, key: key) {
             return data
         } else {
             return nil
@@ -58,7 +88,7 @@ open class DataManager: NSObject {
     
     public static let sharedInstance = DataManager()
     
-    func logoutUser() {
+    public func logoutUser() {
         self.resetDefaults()
         UserDefaults.standard.removeObject(forKey: "user")
     }
