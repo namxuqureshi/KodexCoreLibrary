@@ -711,23 +711,11 @@ extension UIButton {
 }
 
 
-
 var localUserApp : User? {
     get {
-        return DataManager.sharedInstance.getPermanentlySavedUser()
+        return DataManager.sharedInstance.getPermanentlySavedUser(dataType: User.self)
     }
 }
-//var localUserAppPic : String? {
-//    get {
-//        return DataManager.sharedInstance.localUserPic()
-//    }
-//}
-//var localUserAppId : Int? {
-//    get {
-//        return DataManager.sharedInstance.localUserId()
-//    }
-//}
-
 
 extension DispatchQueue {
 
