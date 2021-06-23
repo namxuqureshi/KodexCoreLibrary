@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KodexCoreLibrary'
-  s.version          = '1.1.7'
+  s.version          = '1.1.8'
   s.summary          = 'Basic Kodex Core Library'
 
 # This description is used to generate tags and improve search results.
@@ -60,7 +60,7 @@ TODO: Add long description of the pod here.
    s.dependency 'PinCodeTextField'
    s.dependency 'ESTabBarController-swift'
    s.dependency 'SideMenu'
-   s.dependency 'MaterialComponents/TextFields'
+ #  s.dependency 'MaterialComponents/TextFields'
    s.dependency 'ActiveLabel'
    s.dependency 'AWSAuthUI'#, '~> 2.6.13'
    s.dependency 'AWSMobileClient'#, '~> 2.6.13'
