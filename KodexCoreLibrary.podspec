@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KodexCoreLibrary'
-  s.version          = '1.1.8'
+  s.version          = '1.1.9'
   s.summary          = 'Basic Kodex Core Library'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,8 @@ TODO: Add long description of the pod here.
    s.public_header_files = 'KodexCoreLibrary/Classes/*.h'
    s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'IQKeyboardManager'
-   s.dependency 'KingfisherWebP'
+#    s.dependency 'KingfisherWebP'
+   s.dependency 'Kingfisher'
    s.dependency 'PasswordTextField'
    s.dependency 'Alamofire'
    s.dependency 'SwiftyJSON'
